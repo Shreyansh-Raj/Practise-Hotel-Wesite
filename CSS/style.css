@@ -1,0 +1,293 @@
+/* Variables */
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button{
+    outline: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Styling Navbar */
+
+body::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 627px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    top: 0;
+    position: sticky;
+}
+
+#navigation{
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    list-style: none;
+}
+
+.tabs button{
+    font-family: 'Nunito', sans-serif;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 3px 10px;
+    margin: 20px;
+    font-size: 22px;
+    color: var(--indigo);
+}
+
+
+.tabs button:hover{
+    text-decoration: underline;
+    color: var(--purple);
+}
+
+#logo{
+    margin: 0px 2em;
+    height: 90px;
+}
+
+#logo img{
+    filter: invert(100%);
+}
+
+/* Styling Home */
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 280px;
+    align-items: center;
+    padding: 128px;
+}
+
+.h-primary{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    padding: 24px;
+}
+
+.p-primary{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.b-primary{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1em;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+    margin: 24px;
+}
+
+.b-primary:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.b-primary:active{
+    background-color: var(--gray);
+}
+
+/* Styling Services */
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(247, 212, 199);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-container{
+    border: 5px solid black;
+    margin: 2px 30px;
+    margin-bottom: 20px;
+    border-radius: 22px;
+    background-color: rgb(250, 197, 176);
+}
+
+.services-container img{
+    display: block;
+    margin: auto;
+}
+
+footer{
+    font-size: 0.9rem;
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    bottom: 0;
+    text-align: center;
+}
+
+/* Our Clients */
+
+.our-clients{
+    display: flex;
+    background-image: url("../Images/background 4.jpg");
+    flex-direction: column;
+    align-items: center;
+}
+
+.clients{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+.client-images{
+    padding: 12px;
+    height: 9.3vw;
+}
+.our-clients h1{
+    padding-bottom: 10px;
+}
+
+/* Contact Us */
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+}
+
+.contact-us::before{
+    content: "";
+    position: absolute;
+    background-image: url("../Images/background 3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.contact-us h1{
+    padding-bottom: 8px;
+}
+
+.contact-form label{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+.contact-form input,textarea{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+}
+
+.contact-us button{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 1rem;
+    padding: 3px 10px;
+    background-color: var(--red);
+    border: 2px solid var(--red);
+    margin-top: 8px;
+    border-radius: 3px;
+}
+
+.contact-us button:hover{
+    cursor: pointer;
+    background-color: #dd2739;
+}
+
+/* Text and Heading formating */
+
+.h-primary{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    padding: 24px;
+}
+
+.p-primary{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.h-secondary{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.p-secondary{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 34px;
+    padding-top: 14px;
+    font-size: 1em;
+}

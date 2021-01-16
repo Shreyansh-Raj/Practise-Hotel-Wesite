@@ -1,0 +1,87 @@
+/* Navigation styling */
+
+@media only screen and (max-width:761px){
+    #navbar{
+        flex-direction: column;
+    }
+}
+
+/* Home styling */
+
+@media only screen and (max-width:768px){
+    .home{
+        padding: 64px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .home{
+        padding: 44px;
+    }
+    .services-container img{
+        height: 240px;
+    }
+    .h-secondary{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:702px){
+    .h-primary{
+        padding-top: 10px;
+        font-size: 23.52px;
+    }
+
+    .p-primary{
+        font-size: 11.48px;
+    }
+
+    .b-primary{
+        font-size: 13.68px;
+    }
+}
+
+@media only screen and (max-width:604px){
+    .tabs button{
+        font-size: 4.2vw;
+        padding: 2px 5px;
+        margin: 2px 8px;
+    }
+
+    @media only screen and (max-width:350px){
+        .tabs button{
+            font-size: 3.8vw;
+        }
+    }
+}
+
+
+@media only screen and (max-width:950px){
+    .client-images{
+        height: 9vw;
+    }
+    @media only screen and (max-width:750px){
+        .client-images{
+            height: 8.5vw;
+        }
+        @media only screen and (max-width:537px){
+            .client-images{
+                height: 8vw;
+            }
+            @media only screen and (max-width:425px){
+                .client-images{
+                    height: 34px;
+                }
+            }
+        }
+    }
+}
+
+/* Services styling */
+
+.container{
+    flex-direction: column;
+}
+
+/* Contact Us Styling */
+
